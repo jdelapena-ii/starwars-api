@@ -1,17 +1,18 @@
 import './App.css';
 import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './containers/Header';
-import ItemListing from './containers/ItemListing';
-// import ItemComponent from './containers/ItemComponent';
-import ItemDetail from './containers/ItemDetail';
-import PlanetsCategory from './containers/PlanetsCategory';
-import PeopleCategory from './containers/PeopleCategory';
+import Header from './components/Header';
+import ItemListing from './components/ItemListing';
+// import ItemComponent from './components/ItemComponent';
+import ItemDetail from './components/ItemDetail';
+import PlanetsCategory from './components/PlanetsCategory';
+import PeopleCategory from './components/PeopleCategory';
 import { useSelector } from 'react-redux';
 
 function App() {
   const items = useSelector((state) => state.allItems.items)
   const url = items.map(item => item.url)
   console.log(url)
+
   return (
     <div className="App">
       <Router>
