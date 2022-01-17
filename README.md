@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Project Navigation and Description
+1. In the hompage, two types of categories with their details are displayed. These are planets and people.
+2. In the subheader of the homepage, you can navigate to the different pages of each category. 
+3. Inside the category page, a single type of category is displayed with 3 card in each page. There is also a pagination at the bottom of every page inside the distinct category page.
+4. Upon clicking the each card, it will redirect you to a distinct page with the details of the single item.
+5. Different style methods are used in this project. These are using react-bootstrap, custom classNames, and inline styling of each element. This is not to show complicated code but only to show the flexibility of the developer to use plain CSS and/or React Component Libraries.
