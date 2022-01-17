@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.label {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.value {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.card {
+    height: 300px;
+    width: 550px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+@media (max-width: 335px) {
+    .card {
+        width: 450px;
+    }
+    .value {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .label {
+        font-size: 15px;;
+    }
+} 

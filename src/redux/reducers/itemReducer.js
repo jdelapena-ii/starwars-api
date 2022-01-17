@@ -6,7 +6,7 @@ const initialState = {
     planets: [],
 }
 
-export const itemReducer = (state = initialState, {type, payload}) => {
+export const itemReducer = (state = initialState.items, {type, payload}) => {
     switch (type) {
         case ActionTypes.SET_ITEMS: 
             return { ...state, items: payload };

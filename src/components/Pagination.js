@@ -17,7 +17,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     >
       {pageNumbers.map((number) => (
         <div key={number} style={{ marginRight: "10px" }}>
-          <button onClick={() => paginate(number)}>{number}</button>
+          <button onClick={() => paginate(number)} style={{cursor: 'pointer'}}>{number}</button>
         </div>
       ))}
     </div>

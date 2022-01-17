@@ -1,10 +1,10 @@
 import './App.css';
 import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import ItemListing from './components/ItemListing';
-import ItemDetail from './components/ItemDetail';
-import PlanetsCategory from './components/PlanetsCategory';
-import PeopleCategory from './components/PeopleCategory';
+import ItemListing from './containers/ItemListing';
+import ItemDetail from './containers/ItemDetail';
+import PlanetsCategory from './containers/PlanetsCategory';
+import PeopleCategory from './containers/PeopleCategory';
 
 function App() {
 
