@@ -29,11 +29,11 @@ const ItemListing = () => {
     const combinedArrays = [...planetsArray, ...peopleArray];
 
     dispatch(setItems(combinedArrays));
+    setLoading(false);
   };
 
   useEffect(() => {
     fetchItems();
-    setLoading(false);
   }, []);
 
   return (

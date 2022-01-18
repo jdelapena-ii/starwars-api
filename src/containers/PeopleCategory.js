@@ -24,11 +24,11 @@ const PeopleCategory = () => {
         console.log(error);
       });
     dispatch(setPeople(peopleResponse.data.results));
+    setLoading(false);
   };
 
   useEffect(() => {
     fetchPlanets();
-    setLoading(false);
   }, []);
 
   // Get current posts

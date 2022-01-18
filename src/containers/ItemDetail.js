@@ -24,11 +24,11 @@ const ItemDetail = () => {
     });
 
     dispatch(selectedItem(planetsresponse.data));
+    setLoading(false);
   };
 
   useEffect(() => {
     if (itemId && itemId !== "") fetchItemDetail();
-    setLoading(false);
   }, []);
 
   return (

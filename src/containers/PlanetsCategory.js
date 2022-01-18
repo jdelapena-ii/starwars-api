@@ -25,11 +25,11 @@ const PlanetsCategory = () => {
         console.log(error);
       });
     dispatch(setPlanets(planetsResponse.data.results));
+    setLoading(false);
   };
 
   useEffect(() => {
     fetchPlanets();
-    setLoading(false);
   }, []);
 
   // Get current posts
