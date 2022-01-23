@@ -3,8 +3,10 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
+import { Card } from 'react-bootstrap';
+
 import { selectedItem } from "../redux/actions/dataActions";
-import {Card} from 'react-bootstrap';
+
 import './itemdetail.css'
 
 const ItemDetail = () => {

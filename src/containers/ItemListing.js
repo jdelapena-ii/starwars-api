@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios";
+
 import ItemComponent from "../components/ItemComponent";
 import { setItems } from "../redux/actions/dataActions";
-import axios from "axios";
 
 const ItemListing = () => {
   const [loading, setLoading] = useState(false);
